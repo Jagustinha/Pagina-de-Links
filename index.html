@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gustavo Helfemberger</title>
+</head>
+<body>
+    <div class="share"><button onclick="share()"><img src="./Components/img/share.png" alt=""></button></div>
+    <div class="linktree">
+        <img src="./Components/img/gusta.jpeg" alt="#">
+        <h1>Gustavo Helfemberger</h1>
+        <h2>Liks que trazem dinheiro!</h2>
+        <a id="button-86" href="https://siteseguro.net/PPU38CLTEUD" target="_blank">Insta Money</a>
+        <a id="button-86" href="https://go.perfectpay.com.br/PPU38CLTEUM" target="_blank">Bot Blaze Ninja</a>
+        <a id="button-86" href="https://www.instagram.com/hellfemberger/?next=%2F" target="_blank">Instagram</a>
+        <a id="button-86" href="https://www.tiktok.com/@jagusta" target="_blank">Tiktok</a>
+
+    </div>
+   
+
+    <script>
+        function share() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Lucre Agora',
+              text: 'Ganhe dinheiro de forma fácil e flexível, em qualquer hora e lugar.',
+              url: 'https://jagustinha.github.io/Linktree/'
+            })
+              .then(() => console.log('Compartilhado com sucesso!'))
+              .catch(error => console.log('Erro ao compartilhar:', error));
+          } else {
+            alert('Compartilhamento não suportado pelo seu navegador.');
+          }
+        }
+        </script>
+    
+    
+
+    
+</body>
+</html>

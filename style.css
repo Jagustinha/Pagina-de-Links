@@ -1,0 +1,190 @@
+@font-face {
+  font-family: lobster;
+  src: url(./Components/Fonts/Lobster-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    
+
+    
+  }
+  
+  body {
+
+    background-image: url(./Components/img/background.jpg);
+    background-size: 200% 300%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: colors 30s ease infinite; 
+    font-family: lobster;
+  }
+
+  h1{
+    font-family: lobster, sans-serif;
+    color: #60563e;
+
+  }
+
+  h2{
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+    font-family: lobster, Arial, Helvetica;
+    border-radius: 50px;
+    background-image: url(./Components/img/dolar.jpeg);
+    background-size: 50%;
+    padding: 10px;
+    border: solid 1px #e9bd46;;
+
+  }
+
+
+  .share button {
+    position: absolute;
+    left: 75%;
+    transform: scale(0.69);
+    filter: grayscale(100%) invert(100%);
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+  }
+
+  .linktree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    gap: 35px;
+
+
+  }
+  
+  .linktree img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: solid 3px white;
+  }
+  
+  .linktree h1 {
+    font-size: 30px;
+
+  }
+  
+
+/* CSS */
+#button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#button-86::after,
+#button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .3s;
+}
+
+#button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: url('./Components/img/botao.jpeg') no-repeat center center;
+  border-radius: 10px;
+}
+
+#button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #00000015;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+#button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+#button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+#button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+  
+  
+  /* Media query para dispositivos móveis com largura máxima de 480 pixels */
+  @media only screen and (max-width: 400px) {
+    .link {
+      width: 80vw;
+      
+    }
+  
+    .link img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .link h1 {
+      font-size: 16px;
+    }
+  
+    a {
+      width: 60%;
+    }
+    
+  }
+
+
+@keyframes colors {
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+
+    }
+
+    100%{
+        background-position:0% 50%;
+
+    }
+
+}
